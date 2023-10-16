@@ -42,11 +42,21 @@ th {
 .container {
     margin-top: 25px;
     margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 0 0 15px grey;
     padding: 10px 15px 0 15px;
+    width: 66%;
 }
 
-.col-md-12 {
+.full-width {
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.half-width {
+    width: 50%;
     margin-bottom: 5px;
 }
 
@@ -54,22 +64,18 @@ th {
     margin-top: 25px;
 }
 
-.work-employer {
-    margin-left: -18pt;
-    font-size: 19px;
-}
-
-.work-dates {
-    font-style: italic;
-}
-
 .title-role {
     color: #f2511b
 }
 
-.title-role,
+.title-role{
+    text-align: left;
+    font-style: italic;
+    font-size: 20px;
+}
 .title-contact-info,
 .title-contact-info-for-print {
+    text-align: right;
     font-style: italic;
     font-size: 20px;
 }
@@ -90,9 +96,22 @@ th {
     display: none;
 }
 
+.work-employer {
+    margin-left: -18pt;
+    font-size: 19px;
+}
+
+.work-dates {
+    font-style: italic;
+}
+
+/* 
+
 .center-content {
   padding: 2.5% 5%;
 }
+
+
 .work-title {}
 
 .work-description {}
@@ -136,7 +155,7 @@ th {
     margin-left: 2em;
     margin-right: 2em;
 }
-
+*/
 @media only print {
     body {
         font-size: 12px;
@@ -160,9 +179,9 @@ th {
         margin-top: 1px;
         padding: 0 4px 0 8px;
     }
-    .col-md-12,
-    .col-sm-12,
-    .col-xs-12 {
+    .full-width,
+    .full-width,
+    .full-width {
         margin-bottom: 1px;
     }
     .title-name {
