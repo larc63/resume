@@ -36,7 +36,7 @@ a {
 
 td,
 th {
-    padding: 5px;
+    padding: 0;
 }
 
 .container {
@@ -52,6 +52,8 @@ th {
 .full-width {
     width: 100%;
     margin-bottom: 5px;
+}
+.full-width-container {
     display: flex;
 }
 
@@ -133,13 +135,14 @@ th {
     margin-top: 1px;
     margin-left: 2em;
 }
-
+*/
 .skills {
-    width: 95%;
-    margin-left: 1em;
+    width: 75%;
+    /* margin-left: 1em; */
+    margin: auto;
     text-align: center;
 }
-
+/*
 .education-school {}
 
 .education-school-for-print {

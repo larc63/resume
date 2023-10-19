@@ -40,7 +40,7 @@ var ResumeBuilder = function () {
     var self = this;
     setInnerText('title-name', data.bio.name);
     setInnerText('title-role', data.bio.role);
-
+    
     for (const c in data.contacts) {
         if (Object.hasOwnProperty.call(data.contacts, c)) {
             const contact = data.contacts[c];
@@ -48,7 +48,17 @@ var ResumeBuilder = function () {
             setInnerHTML(`contact-${c}-print`, `<a href="${contact.url}${contact.text}">${contact.text}<i class="fa ${contact.fa}"></i></a>`);
         }
     }
-
+    let skillsHTML = ['<tr>'];
+    let rows = data.skills.length / 3;
+    for (let i = 0; i < data.skills.length; i++) {
+        const skill = data.skills[i];
+        skillsHTML.push(`<td>${skill}</td>`);
+        if(i > 0 && i % 3 == 2){
+            skillsHTML.push('</tr><tr>');
+        }
+    }
+    skillsHTML.push('</tr>');
+    setInnerHTML('skills', skillsHTML.join(''));
     // this.skills = ko.computed(function () {
     //     var result = [],
     //         row,
