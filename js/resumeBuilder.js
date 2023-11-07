@@ -59,33 +59,46 @@ var ResumeBuilder = function () {
     }
     skillsHTML.push('</tr>');
     setInnerHTML('skills', skillsHTML.join(''));
-    // this.skills = ko.computed(function () {
-    //     var result = [],
-    //         row,
-    //         colLength = (window.innerWidth / 200) >> 0;
 
-    //     this.dummyObservable();
+    let jobsHTML = [];
+    for (const j in data.work.jobs) {
+        if (Object.hasOwnProperty.call(data.work.jobs, j)) {
+            const job = data.work.jobs[j];
+            jobsHTML.push('<div class="item-inner">');
+            jobsHTML.push(`<div class="item-title">${job.employer} - ${job.title}</div>`);
+            jobsHTML.push(`<div class="item-dates">${job.dates}</div>`);
+            jobsHTML.push('</div>');
+            jobsHTML.push(`<div class="item-description">${job.roles}</div>`);
+        }
+    }
+    setInnerHTML('jobs', jobsHTML.join(''));
 
-    //     //loop through items and push each item to a row array that gets pushed to the final result
-    //     for (var i = 0, j = data.bio.skills.length; i < j; i++) {
-    //         if (i % colLength === 0) {
-    //             if (row) {
-    //                 result.push(row);
-    //             }
-    //             row = [];
-    //         }
-    //         row.push({
-    //             skill: data.bio.skills[i]
-    //         });
-    //     }
+    let projectsHTML = [];
+    for (const p in data.work.projects) {
+        if (Object.hasOwnProperty.call(data.work.projects, p)) {
+            const project = data.work.projects[p];
+            projectsHTML.push('<div class="item-inner">');
+            projectsHTML.push(`<div class="item-title">${project.name}</div>`);
+            projectsHTML.push(`<div class="item-dates">${project.dates}</div>`);
+            projectsHTML.push('</div>');
+            projectsHTML.push(`<div class="item-description">${project.description}</div>`);
+        }
+    }
+    setInnerHTML('projects', projectsHTML.join(''));
 
-    //     //push the final row  
-    //     if (row) {
-    //         result.push(row);
-    //     }
+    let schoolsHTML = [];
+    for (const s in data.education.schools) {
+        if (Object.hasOwnProperty.call(data.education.schools, s)) {
+            const project = data.education.schools[s];
+            schoolsHTML.push('<div class="item-inner">');
+            schoolsHTML.push(`<div class="item-title">${project.name}</div>`);
+            schoolsHTML.push(`<div class="item-dates">${project.dates}</div>`);
+            schoolsHTML.push('</div>');
+            schoolsHTML.push(`<div class="item-description">${project.major}</div>`);
+        }
+    }
+    setInnerHTML('schools', schoolsHTML.join(''));
 
-    //     return result;
-    // }, this);
 
     // this.jobs = ko.observableArray([]);
     // for (j in data.work.jobs) {

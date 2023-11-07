@@ -95,9 +95,7 @@ var data = {
                 "roles": [],
                 "url": "http://www.gameloft.com"
             }
-        ]
-    },
-    projects: {
+        ],
         "projects": [{
                 "name": "Chinese Characters",
                 "location": "Mexicali, Baja California, Mexico",
@@ -129,22 +127,23 @@ var data = {
         ]
     },
     education: {
-        "schools": [{
-                "name": "Udacity",
-                "location": "Online",
-                "degree": "Nanodegree",
-                "major": "iOS developer",
-                "dates": "2015 - Present",
-                "url": "http://www.udacity.com/"
-            },
-            {
-                "name": "Udacity",
-                "location": "Online",
-                "degree": "Nanodegree",
-                "major": "Front-end web developer",
-                "dates": "2014 - 2015",
-                "url": "http://www.udacity.com/"
-            },
+        "schools": [
+            // {
+            //     "name": "Udacity",
+            //     "location": "Online",
+            //     "degree": "Nanodegree",
+            //     "major": "iOS developer",
+            //     "dates": "2015 - Present",
+            //     "url": "http://www.udacity.com/"
+            // },
+            // {
+            //     "name": "Udacity",
+            //     "location": "Online",
+            //     "degree": "Nanodegree",
+            //     "major": "Front-end web developer",
+            //     "dates": "2014 - 2015",
+            //     "url": "http://www.udacity.com/"
+            // },
             {
                 //                "name": "Centro de Investigación Científica y Educación Superior de Ensenada",
                 "name": "CICESE",

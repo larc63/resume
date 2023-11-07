@@ -47,75 +47,18 @@
             </table>
         </div>
 
-        <div class="full-width full-width-container">
-            <h2>Relevant Experience</h2>
-            <div data-bind="foreach: jobs" class="full-width">
-                <div class="full-width">
-                    <div class="col-xs-9">
-                        <div data-bind="text: name" class="work-employer"></div>
-                    </div>
-                    <div class="col-xs-3">
-                        <div data-bind="text: date" class="project-date"></div>
-                    </div>
-                </div>
-                <div data-bind="foreach: projects" class="full-width">
-                    <div class="col-xs-10">
-                        <h3 data-bind="text: name" class="project-name"></h3>
-                    </div>
-                    <div class="full-width">
-                        <ul data-bind="foreach: details">
-                            <li data-bind="text: detail" class="project-description"></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <h2>Relevant Experience</h2>
+        <h3>Jobs</h3>
+        <div id="jobs" class="full-width">
         </div>
-<!--
-
-        <div class="full-width">
-            <h2>Other Projects</h2>
-            <div data-bind="foreach: projects" class="full-width">
-                <div class="col-xs-10">
-                    <h3 data-bind="text: name" class="project-name"></h3>
-                </div>
-                
-                <div class="full-width">
-                    <ul data-bind="foreach: details">
-                        <li data-bind="text: detail" class="project-description"></li>
-                    </ul>
-                </div>
-            </div>
+        <h3>Projects</h3>
+        <div id="projects" class="full-width">
         </div>
--->
-
-
-
-
-        <!-- <div class="full-width">
-            <h2>Education</h2>
-            <div data-bind="foreach: schools" class="full-width">
-                <div class="full-width">
-                    <span data-bind="text: name" class="education-school"></span>
-                </div>
-            </div>
-        </div> -->
-
-        <!--
-
-        <div class="full-width">
-            <h2>Online Courses</h2>
-            <table data-bind="foreach: coursesDisplay" class="full-width courses-box">
-                <tr data-bind="foreach: $data">
-                    <td data-bind="with: course">
-                        <a data-bind="text: title, attr:{href: certificate}" class="course-title"></a><span data-bind="text: title" class="course-title-for-print"></span>&nbsp;from <span data-bind="text: school"></span> - <span data-bind="text: dates"></span>
-                    </td>
-                </tr>
-            </table>
+        <h2>Education</h2>
+        <div id="schools" class="full-width">
         </div>
--->
+        <br><br><br>
     </div>
-    <!-- <script src="js/jszip.min.js"></script> -->
     <script src="js/resumeData.js"></script>
-    <!-- <script src="js/xmindparser.js"></script> -->
     <script src="js/resumeBuilder.js"></script>
 </body>
