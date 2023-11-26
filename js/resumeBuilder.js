@@ -68,7 +68,14 @@ var ResumeBuilder = function () {
             jobsHTML.push(`<div class="item-title">${job.employer} - ${job.title}</div>`);
             jobsHTML.push(`<div class="item-dates">${job.dates}</div>`);
             jobsHTML.push('</div>');
-            jobsHTML.push(`<div class="item-description">${job.roles}</div>`);
+            let txtRoles = [];
+            for (const r in job.roles) {
+                if (Object.hasOwnProperty.call(job.roles, r) && job.roles[r].length > 0) {
+                    const role = job.roles[r];
+                    txtRoles.push(`<li>${role}</li>`)
+                }
+            }
+            jobsHTML.push(`<div class="item-description"><ul>${txtRoles.join('\n')}</ul></div>`);
         }
     }
     setInnerHTML('jobs', jobsHTML.join(''));
