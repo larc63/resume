@@ -1,80 +1,75 @@
 <style>th { display: none;} h3,h4,h5,p,hr {margin-block-start: 0px;margin-block-end: 0px;}</style>
 <div style="display:flex;justify-content: space-between">
 <div style="display:flex;justify-content: flex-start;flex-direction:column">
-<h2>Luis A. Rodriguez</h2>
-<h3>Lead Software Engineer & Architect</h3>
+<h2>Luis A. Rodriguez Condit</h2>
+<h3>Technical Architect – Embedded & Web Systems</h3>
 </div>
 <div style="display:flex;justify-content: space-between;flex-direction:column">
 <h4>Mobile: <a href="tel://">+1-972-850-6310</a></h4>
 <h4>Email: <a href="mailto://">larc63@gmail.com</a></h4>
-<h4>Linkedin: <a href="https://www.linkedin.com/in/">larc63</a></h4>
+<h4>Linkedin: <a href="https://www.linkedin.com/in/larc63">www.linkedin.com/in/larc63</a></h4>
+<h4>github: <a href="https://www.github.com/larc63">www.github.com/in/larc63</a></h4>
 <h4>Location: Dallas, TX</h4>
 </div>
-
 </div>
-# Luis A. Rodriguez
+<br/>
 
-## Lead Software Engineer & Architect
+--- 
 
-| Contact | |
+### Summary
+
+Senior Technical Architect with 20+ years of experience in software development, spanning embedded systems, mobile gaming, and large-scale web applications used by millions. Expert in bridging low-level hardware emulation and proprietary protocols with modern web technologies like WebAssembly, TypeScript, and Angular. Proven technical leader and empathetic mentor, skilled in defining architectural requirements, driving code quality, and leading cross-functional teams to deliver robust, user-centered solutions.
+
+---
+
+### Core Technical Skills
+
+| Category | Skills & Tools |
 | :--- | :--- |
-| **Mobile** | +1-972-850-6310 |
-| **Email** | larc63@gmail.com |
-| **LinkedIn** | [larc63](https://www.linkedin.com/in/larc63) |
-| **Location** | Dallas, TX |
+| Languages | TypeScript, JavaScript, C, C++, Angular, Java, z80 Assembly, CSS, HTML |
+| Architectural Core | WebAssembly, Emscripten, Cross-Compilation, Hardware Emulation, JNI, Lua Glue, USB Communication |
+| Web & Frameworks | Angular, Spring Boot, WebSerial, WebUSB, RESTful APIs, Single-Sign-On (SSO) |
+| DevOps & Tools | Gulp, Jenkins, CMake, MSBuild, Git, Node.js, Mocha, Selenium WebDriver |
+| Leadership | Technical Leadership, Scrum Master, Agile/Scrum, Test-Driven Development (TDD) |
 
 ---
 
-## Skills
+### Professional Experience
 
-| Category | Technologies |
-| :--- | :--- |
-| **Languages** | C, JavaScript, TypeScript, CSS, HTML, Java |
-| **System & Low Level** | Emscripten, WebAssembly, Java Native Interface (JNI), Hardware Emulation, WebSerial, WebUSB, USB Communication, Cross-Compilation, Markdown |
-| **Mobile/Web/Frameworks** | Angular, Spring Boot, Lua, Gulp, Ant, Mocha, Jasmine, Selenium WebDriver |
-| **Leadership** | Technical Leadership, Test-Driven Development (TDD), Agile/Scrum, Project Coordination, Git |
+#### Texas Instruments -- Software Architect -- *(2010 – 2025, Dallas, TX)*
 
----
+Progressive tenure specializing in bridging low-level hardware emulation and proprietary communication protocols with modern web applications and client product lines. Recognized with an appointment to the first rung of TI's Technical Ladder.
 
-## Work Experience
+* **Architectural Leadership & Web-Native Integration:** Led development and served as Scrum Master for calculator web applications. Architected and implemented a unified file-transfer API using WebSerial for both physical and emulated calculator devices.
+* **Pioneering Web Technologies (WebAssembly):** Designed and implemented the core glue layer to target embedded C code on the web, successfully transpiling to WebAssembly via Emscripten for the TI-84 Plus CE Online Calculator.
+* **DevOps & Build System Optimization:** Developed and maintained Gulp.js build scripts for complex toolchains (CMake, MSBuild). Optimized the workflow into parallel Jenkins jobs, resulting in a 70% reduction in overall build time.
+* **Massive User Adoption:** Led the rapid-response effort to develop and launch the TI-84 Plus CE Chrome App, which has since been used by over 3.5 million users.
+* **Systems Engineering:** Established cross-platform USB communication architecture using a JNI abstraction layer to deliver platform-native libraries (Windows/macOS) for the TI Connect CE utility.
+* **Accessibility & Quality:** Implemented low-level code in z80 Assembly and JavaScript to integrate calculator emulators with screen readers, ensuring compliance and accessibility for vision-impaired users.
 
-### Texas Instruments -- Software Architect (2010–2025)
-* **TI Connect CE**: Delivered cross-platform compatibility for a proprietary CARS communication protocol by porting the codebase to generate platform-native libraries (Windows/macOS). Established the USB communication architecture using an abstraction layer and integrated the functionality into the application via Java Native Interface (JNI).
-* **Calculator Device Emulation**: Designed and implemented the glue layer for targeting embedded code on the web by transpiling to WebAssembly. Coordinated crossfunctional team that did development and test for new features. Designed and implemented an automation entry point using WebSockets.
-* **Examcalcs / TI 84 Plus CE ExamCalc**: Implemented emulators for ez80-based devices which have gone through our client's pilots involving 800k users without any reported issues. / Adapted z80 opcodes and emulated the TI-84 Silver Edition and TI-84 Plus C's ASICs. Ported Toshiba T4 cpu emulation from Java and implemented the TI-108 and TI-30MV's ASICs.
-* **Examcalc Accessibiliy**: Implemented code needed in both z80 assembly and javascript to support market needs to make calculator emulators interact correctly with a screen reader for the vision impaired.
-Ui And Background Thread Refactor: Worked in conjunction with the development team to refactor the usage of JNI, improving performance and memory usage.
-Open Source Auditing: Responsible for reviewing software third party library lists to determine their eligibility for integrating into our products.
-Web Apps Server-Side: Led team in determining server configuration changes needed to address concerns brought up by IT security scans.
+#### Digital Chocolate -- Game Engineering Manager -- *(2009 – 2010)*
 
-### Digital Chocolate -- Game Engineering Manager (2009–2010)
+Managed the team responsible for porting mobile games for US carriers' devices, focusing on cost reduction and technical excellence.
 
-* Coordinated project planning for various US carriers, optimizing production costs and improving revenue in collaboration with sales and marketing teams.
-* Led and mentored the engineering team, providing tutorials and code deep-dives.
-* **Brew In App Purchase Library (2010)**: Created a client module for Qualcomm's Application Value Billing API (**C/C++**), promoting code reuse across future game titles.
-* **Rollercoaster Rush for iPhone (2010)**: Ported the OpenGL game implementation from iPhone to **Brew**.
+* Coordinated project planning to reduce production costs and improve revenue. Led and mentored the engineering team, providing tutorials and code deep-dives.
+* Created a client module for Qualcomm's Application Value Billing API (C/C++) to enable in-app purchases and promote code reuse across future game titles.
 
-### LemonQuest -- iPhone Lead Programmer (2008–2009)
+#### LemonQuest / Gameloft -- Senior Programmer Roles -- *(2005 – 2009)*
 
-* **Circulate and Circulate Prologue (2008)**: Ported a PC-based DirectX game to the iPhone's **OpenGL ES**, translating levels for a touch interface. The game earned a **Bronze Medal** from PocketGamer.
-* **iFit (2009)**: Developed a fitness application for the iPhone with pedometer functionality and fitness tips.
+Focused on mobile game development, porting, and systems programming for the iPhone OS and resource-limited devices.
 
-### Gameloft -- 3d/iPhone Programmer (2005–2008)
-
-* **Blockbreaker for iPhone (2007–2008)**: Developed and ported the first successful prototype for the brickbreaker game using the Celestial framework, leading to the studio being assigned more iPhone projects.
-* **3D Programmer (2006–2007)**: In charge of porting multiple 3D game titles to resource-limited, 3D-capable devices using **Java/J2ME**.
+* Led the team that developed the first successful iPhone game prototype, leading to the studio being assigned more high-profile projects.
+* Ported games from DirectX to iPhone's OpenGL ES, optimizing the user experience by translating desktop inputs for touch and accelerometer use.
 
 ---
 
-## Education
+### Education & Professional Development
 
-### Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE)
-* **Completed coursework towards**: Master's in Electronics and Telecommunications (Specialization in Control Systems and Automation), 2002–2005
+**Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE)**
+* Completed coursework towards: Master's in Electronics and Telecommunications
 
-### Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)
-* **Bachelor's in Electronics Systems Engineering**, 1997–2001
+**Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)**
+* Bachelor's in Electronics Systems Engineering
 
-### Online Courses
-* **iOS Development**: iOS Persistence and Core Data, iOS Networking with Swift, UIKit Fundamentals I & II, Intro to iOS App Development Swift (2015)
-* **JavaScript & Web**: JavaScript Design Patterns, Object-Oriented JavaScript, JavaScript Basics, Intro to HTML and CSS, HTML5 Game Development, jQuery (2013-2015)
-* **Other**: Website Performance Optimization (2014), Software Testing (2012), Web Application Engineering (2012), Artificial Intelligence for Robotics, Introduction to Artificial Intelligence (2011)
+
+<div style="font-size:10px">DISCLAIMER: This document was structured using an AI to tailor experience points to the target role. All content, including dates, titles, and technical claims, is 100% accurate and based on my verified career history. I have thoroughly proofread and confirmed its factual correctness.</div>

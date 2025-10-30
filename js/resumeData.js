@@ -1,7 +1,8 @@
 var data = {
     bio: {
-        "name": "Luis A. Rodriguez",
-        "role": "Lead Software Engineer & Architect",
+        "name": "Luis A. Rodriguez-Condit",
+        "role": "Technical Architect – Embedded & Web Systems",
+        "summary": "I'm a Senior Software Engineer with over 20 years of experience building software that ranges from videogames for small resource limited mobile devices to web applications used by millions of users. I prioritize user experiences to help them achieve whatever their trying to do in a simpler, quicker fashion. I am capable of being an individual contributor, or leading teams where I use my organizational and emotional skills to deliver what the customer or business needs. In a mentor or lead role, I tend to be empathetic, looking for ways to keep the team's morale up so we can all be more eficient. Overall I love to design, write and deliver software that is not only technically sound, but also meaningful and user-centered."
     },
     skills: [ // languages, system & low level, web & frameworks, leadership
         {
@@ -14,6 +15,7 @@ var data = {
                 { "name": "HTML", "v": "80", "y": "0" },
                 { "name": "Java", "v": "50", "y": "0" },
                 { "name": "C++", "v": "50", "y": "0" },
+                { "name": "Python", "v": "50", "y": "0" },
                 { "name": "Objective-C", "v": "50", "y": "0" },
                 { "name": "Swift", "v": "50", "y": "0" },
                 { "name": "z80 Assmbly", "v": "40", "y": "0" },
@@ -33,7 +35,7 @@ var data = {
                 { "name": "WebUSB", "v": "50", "y": "0" },
                 { "name": "USB Communication", "v": "50", "y": "0" },
                 { "name": "Cross-Compilation", "v": "50", "y": "0" },
-                
+
             ]
         },
         {
@@ -78,11 +80,11 @@ var data = {
             "url": "https://www.linkedin.com/in/",
             "fa": "fa-linkedin-square"
         },
-        // "github": {
-        //     "text": "larc63",
-        //     "url": " https://www.github.com/",
-        //     "fa": "fa-github-square"
-        // }
+        "github": {
+            "text": "larc63",
+            "url": "https://www.github.com/",
+            "fa": "fa-github-square"
+        },
         "location": "Dallas, TX"
     },
     work: {
@@ -91,8 +93,9 @@ var data = {
             "title": "Software Architect",
             "location": "Dallas, TX",
             "dates": "November 2010-September 2025",
+            // TODO: strengths: emulation, communications, performance, microoptimizations
             "brief": "Design and implement functional models of the client's new products and features.",
-            "description": "Tenure involved an evolution from rapid functional prototyping (reducing time-to-market) and deep systems engineering to technical leadership roles and architectural oversight. I specialized in bridging low-level hardware emulation and proprietary communication protocols with modern web applications and client product lines. This career progression was formally recognized with an appointment to the first rung of TI's Technical Ladder.",
+            "description": "Tenure involved an evolution from rapid functional prototyping (building POCs and starter code, thus, reducing time-to-market) and deep systems engineering to technical leadership roles and architectural oversight. Considered the go-to person for bringing low-level hardware emulation and proprietary communication protocols to desktop and web applications. As part of the metrics task force, designed and met code quality metrics with tools like unit tests, code sanitizers, linters and static analyzers. This career progression was formally recognized with an appointment to the first rung of TI's Technical Ladder.",
             "description_old": "Create functional models for new features to be implemented on future releases of the company's client product lines. The product lines have source code written in different languages and architectures, as a System Engineer, the design and implementation of functionalities often require visiting different layers of the system, be it communicating from devices to desktop software, making portable documents that work on multiple architectures and form factors that the software runs on to creating stand-alone device emulators",
             "url": "http://education.ti.com",
             "roles": [
@@ -145,7 +148,7 @@ var data = {
                     "title": "License Activation Center",
                     "url": "https://activation.ti.com/activate/",
                     "date": "2020-2021",
-                    "description": "Designed and implemented a key validation interface in coordination with our DBA to provide users a means to activate license codes. Front end implementation written in Angular with a RESTful middleware implemented in Java+SpringBoot."
+                    "description": "Designed and implemented a key validation interface in coordination with our DBA to provide users a means to activate license codes. Front end implementation written in Angular with a RESTful middleware implemented in Java+SpringBoot communicating with an Oracle database."
                 },
                 {
                     "title": "TI-84 Plus CE Chrome App",
@@ -153,9 +156,14 @@ var data = {
                     "description": "In reaction to the covid pandemic, led the team that worked to support remote learning on Chrome OS allowing students coming back from spring break to have a TI calculator to work with. To date, the application has been used by over 3.5 million users. -- written in angular reusing previous work from the ExamCalc product."
                 },
                 {
+                    "title": "Automated Test Framework Prototype",
+                    "date": "2019",
+                    "description": "Prototyped automation framework for interacting with calculator librarires in the browser using Node.js, CucumberJS, Mocha and Selenium Web Driver."
+                },
+                {
                     "title": "Web Apps Server-Side",
                     "date": "2019",
-                    "description": "Led team in determining server configuration changes needed to address concerns brought up by IT security scans."
+                    "description": "Led team in determining Tomcat and Apache Web server configuration changes needed to address concerns brought up by IT security scans. Changes included modifying HTTP headers and additions to meta tags in the web app's HTML"
                 },
                 {
                     "title": "Nspire Connect",
@@ -233,7 +241,8 @@ var data = {
             "location": "Mexicali, B. C.",
             "dates": "2009-2010",
             "brief": "Managed the team doing porting for the US carriers' devices.",
-            "description": "Coordinating project planning for various carriers in the US, working in conjunction with the sales and marketing teams to reduce production costs and improve revenue. Lead and mentor the engineering team, offering tutorials where needed. Ported a 3D game from the iPhone platform to Brew using OpenGL ES. Created client module for Qualcomm's Application Value Billing API in conjunction with the team in Bangalore, India. Aided the creation team to reduce the footprint for their project; done in j2me, targeting a device with strict hardware constraints.",
+            "description": "Managed the team doing porting for the US carriers' devices.",
+            "description_old": "Coordinating project planning for various carriers in the US, working in conjunction with the sales and marketing teams to reduce production costs and improve revenue. Lead and mentor the engineering team, offering tutorials where needed. Ported a 3D game from the iPhone platform to Brew using OpenGL ES. Created client module for Qualcomm's Application Value Billing API in conjunction with the team in Bangalore, India. Aided the creation team to reduce the footprint for their project; done in j2me, targeting a device with strict hardware constraints.",
             "roles": [
                 {
                     "title": "Game Engineering Manager",
@@ -274,7 +283,9 @@ var data = {
                 {
                     "title": "Circulate and Circulate Prologue",
                     "date": "2008",
-                    "description": "Originally a PC based game; it was ported to the iPhone platform. Game used every user-friendly feature on the iPhone, including it's 3d sound capabilities with Open AL and it's accelerometer. Ported the DirectX impementation to the iPhone's OpenGL ES. Translated levels originally designed for desktop/mouse to be usable on a touch device. This game earned a bronze medal from pocketgamer.co.uk. http://www.pocketgamer.co.uk/r/iPhone/Circulate+%28iPhone%29/review.asp?c=11151&tab=tips"
+                    "url": "https://www.pocketgamer.com/circulate/review/",
+                    "url_old": "https://www.pocketgamer.com/circulate-prologue/lemonquest-brings-circulate-prologue-to-the-app-store/",
+                    "description": "Originally a PC based game; it was ported to the iPhone platform. Game used every user-friendly feature on the iPhone, including it's 3d sound capabilities with Open AL and it's accelerometer. Ported the DirectX impementation to the iPhone's OpenGL ES. Translated levels originally designed for desktop/mouse to be usable on a touch device. This game earned a bronze medal from pocketgamer.co.uk."
                 },
                 {
                     "title": "iFit",
@@ -289,7 +300,7 @@ var data = {
             "title": "iPhone Programmer",
             "location": "Mexicali, Baja California, Mexico",
             "dates": "August 2005 to March 2008",
-            "description": "Part of a team doing R&D for the iPhone OS, taking pieces of code from different platforms in order to take advantage of the full capabilities of the newly released iPhone. This development team was the first to have a game ported on to the iPhone for the company, giving our local studio an edge against the other competing offices within the company.",
+            "description": "Various roles, starting from Porting Engineer, Lead Developer, 3d Programmer and R&D Programmer",
             "roles": [
                 {
                     "title": "Blockbreaker for iPhone",
@@ -307,9 +318,9 @@ var data = {
                     "description": "In charge of porting multiple game titles for resource-limited, but 3d-capable devices. All ports used Java/J2ME"
                 },
                 {
-                    "title": "",
-                    "date": "",
-                    "description": ""
+                    "title": "Virgin Mobile Team Lead",
+                    "date": "2005-2006",
+                    "description": "Led team charged with porting games to Virgin Mobile's catalog of space-constrained devices, often needing to reduce games' scope and swap out graphics with lower-detailed versions in addition to performing micro-optimizations to improve performance"
                 },
             ],
             "url": "http://www.gameloft.com"
@@ -319,7 +330,8 @@ var data = {
             "name": "50 Chinese Words",
             "location": "Mexicali, Baja California, Mexico",
             "dates": "2009",
-            "description": "Wrote an application that reproduces the strokes necessary for writing chinese characters as well as playing their sound. Developed a Chinese character writing tutor for the iPhone. https://itunes.apple.com/us/app/50-chinese-words-learn-to/id312982180?mt=8",
+            "description": "Wrote an application that reproduces the strokes necessary for writing chinese characters as well as playing their sound. Developed a Chinese character writing tutor for the iPhone.",
+            "url": "https://itunes.apple.com/us/app/50-chinese-words-learn-to/id312982180?mt=8",
             "images": [
                 "images/ChineseCharacters/thumb.jpeg",
                 "images/ChineseCharacters/01.jpeg",
@@ -333,7 +345,8 @@ var data = {
             "name": "Big 2 Poker",
             "location": "Mexicali, Baja California, Mexico",
             "dates": "2010",
-            "description": "Wrote graphics engine using C and OpenGL ES. Created art for a card game targeted towards the iPhone. https://itunes.apple.com/us/app/big-2-classic-free/id323375748?mt=8",
+            "description": "Wrote graphics engine using C and OpenGL ES. Created art for a card game targeted towards the iPhone.",
+            "url": "https://itunes.apple.com/us/app/big-2-classic-free/id323375748?mt=8",
             "images": [
                 "images/Big2Poker/thumb.jpeg",
                 "images/Big2Poker/01.jpeg",
@@ -418,12 +431,34 @@ var data = {
                     {
                         "title": "Control And Automation Seminar",
                         "date": "2021",
-                        "description": "Attended summer student exchange at the Unversité de Poitiers, France with a focus on **control systems engineering**."
+                        "description": "Attended summer student exchange at the Unversité de Poitiers, France with a focus on control systems engineering."
                     },
                 ]
             }
         ],
-        "onlineCourses": [{
+        "onlineCourses": [
+        {
+            "title": "Bluetooth Low Energy Fundamentals",
+            "school": "Nordic Developer Academy",
+            "dates": "2025",
+            "url": "https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/",
+            "certificate": ""
+        },
+        // {
+        //     "title": "A Beginner’s Guide to Linux Kernel Development (LFD103)",
+        //     "school": "Linux Foundation",
+        //     "dates": "2025",
+        //     "url": "https://training.linuxfoundation.org/training/a-beginners-guide-to-linux-kernel-development-lfd103/",
+        //     "certificate": ""
+        // },
+        {
+            "title": "Learn C++",
+            "school": "Codecademy",
+            "dates": "2025",
+            "url": "https://www.codecademy.com",
+            "certificate": ""
+        },
+        {
             "title": "iOS Persistence and Core Data",
             "school": "Udacity",
             "dates": "2015",

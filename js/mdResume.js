@@ -1,11 +1,11 @@
 
 
 const { data } = require('./resumeData')
-const { writeFileSync } = require('fs');
+const { writeFileSync, readFileSync } = require('fs');
 
 let out = [];
 
-out.push('<style>th { display: none;} h3,h4,h5 {margin-block-start: 0px;margin-block-end: 0px;}</style>');
+out.push('<style>th { display: none;} h3,h4,h5,p,hr {margin-block-start: 0px;margin-block-end: 0px;}</style>');
 
 out.push('<div style="display:flex;justify-content: space-between">')
 out.push('<div style="display:flex;justify-content: flex-start;flex-direction:column">')
@@ -16,15 +16,23 @@ out.push('</div>')
 out.push('<div style="display:flex;justify-content: space-between;flex-direction:column">')
 out.push(`<h4>Mobile: <a href="${data.contacts.mobile.url}">${data.contacts.mobile.text}</a></h4>`);
 out.push(`<h4>Email: <a href="${data.contacts.email.url}">${data.contacts.email.text}</a></h4>`);
-out.push(`<h4>Linkedin: <a href="${data.contacts.linkedin.url}">${data.contacts.linkedin.text}</a></h4>`);
+out.push(`<h4>Linkedin: <a href="${data.contacts.linkedin.url}${data.contacts.linkedin.text}">www.linkedin.com/in/${data.contacts.linkedin.text}</a></h4>`);
+out.push(`<h4>github: <a href="${data.contacts.github.url}${data.contacts.github.text}">www.github.com/in/${data.contacts.github.text}</a></h4>`);
 out.push(`<h4>Location: ${data.contacts.location}</h4>`);
 out.push('</div>\n')
 out.push('</div>\n')
 
+out.push('\n<hr style="margin:none;color:#ddd">\n');
+out.push('\n<br/>\n');
+
+out.push('### Summary\n');
+out.push(`${data.bio.summary}`);
+
+
 out.push('### Skills\n');
 
 
-    out.push(`|||`);
+out.push(`|||`);
     out.push(`|:--|:--|`);
 for (let skillSet of data.skills) {
     // console.log(JSON.stringify(skillSet));
@@ -40,6 +48,10 @@ for (let skillSet of data.skills) {
 
     // console.log()
 }
+
+let ts = readFileSync('./master/transferrableskills.md', 'utf-8');
+out.push(ts);
+
 
 // for (let i = 0; i < data.skills.length; i++) {
 //     const element = data.skills[i];
@@ -67,6 +79,7 @@ for (const job of data.work.jobs) {
     } else {
         out.push(`#### ${job.employer} -- ${job.title}`);
     }
+    out.push(job.description);
     for (const R of job.roles) {
         // console.log(typeof(R))
         switch (typeof (R)) {
@@ -95,6 +108,7 @@ for (const job of data.work.jobs) {
                 if (desc.length > 0) {
                     out.push(`${desc}`)
                 }
+                out.push('\n<hr style="margin:none;color:#ddd">\n');
                 break;
             case 'string':
                 if (R.trim().length > 0) {
@@ -135,4 +149,6 @@ out.push(``);
 out.push(``);
 out.push(``);
 
-writeFileSync('../output/MasterCV.md', out.join('\n'), 'utf-8');
+out.push('<div style="font-size:10px">DISCLAIMER: This document was structured using an AI to tailor experience points to the target role. All content, including dates, titles, and technical claims, is 100% accurate and based on my verified career history. I have thoroughly proofread and confirmed its factual correctness.</div>');
+
+writeFileSync('output/MasterCV.md', out.join('\n'), 'utf-8');
