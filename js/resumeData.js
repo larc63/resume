@@ -1,8 +1,9 @@
+//TODO: My sweet spot is owning solutions from end to end
 var data = {
     bio: {
         "name": "Luis A. Rodriguez-Condit",
         "role": "Technical Architect – Embedded & Web Systems",
-        "summary": "I'm a Senior Software Engineer with over 20 years of experience building software that ranges from videogames for small resource limited mobile devices to web applications used by millions of users. I prioritize user experiences to help them achieve whatever their trying to do in a simpler, quicker fashion. I am capable of being an individual contributor, or leading teams where I use my organizational and emotional skills to deliver what the customer or business needs. In a mentor or lead role, I tend to be empathetic, looking for ways to keep the team's morale up so we can all be more eficient. Overall I love to design, write and deliver software that is not only technically sound, but also meaningful and user-centered."
+        "summary": "I'm a Senior Software Engineer with over 20 years of experience building software that ranges from video games for small resource limited mobile devices to web applications used by millions of users. I prioritize user experiences to help them achieve whatever their trying to do in a simpler, quicker fashion. I am capable of being an individual contributor, or leading teams where I use my organizational and emotional skills to deliver what the customer or business needs. In a mentor or lead role, I tend to be empathetic, looking for ways to keep the team's morale up so we can all be more efficient. Overall I love to design, write and deliver software that is not only technically sound, but also meaningful and user-centered."
     },
     skills: [ // languages, system & low level, web & frameworks, leadership
         {
@@ -18,7 +19,7 @@ var data = {
                 { "name": "Python", "v": "50", "y": "0" },
                 { "name": "Objective-C", "v": "50", "y": "0" },
                 { "name": "Swift", "v": "50", "y": "0" },
-                { "name": "z80 Assmbly", "v": "40", "y": "0" },
+                { "name": "z80 Assembly", "v": "40", "y": "0" },
                 { "name": "Brew", "v": "50", "y": "0" },
                 { "name": "J2ME", "v": "50", "y": "0" },
             ]
@@ -28,9 +29,10 @@ var data = {
             "skills": [
                 { "name": "Emscripten", "v": "70", "y": "0" },
                 { "name": "Markdown", "v": "80", "y": "0" },
-                { "name": "WebAssembly", "v": "60", "y": "0" },
-                { "name": "Java Native Interface", "v": "50", "y": "0" },
                 { "name": "Hardware Emulation", "v": "80", "y": "0" },
+                { "name": "WebAssembly", "v": "60", "y": "0" },
+                { "name": "OpenAPI/Swagger", "v": "60", "y": "0" },
+                { "name": "Java Native Interface", "v": "50", "y": "0" },
                 { "name": "WebSerial", "v": "50", "y": "0" },
                 { "name": "WebUSB", "v": "50", "y": "0" },
                 { "name": "USB Communication", "v": "50", "y": "0" },
@@ -49,6 +51,9 @@ var data = {
                 { "name": "Mocha", "v": "50", "y": "0" },
                 { "name": "Jasmine", "v": "50", "y": "0" },
                 { "name": "Selenium WebDriver", "v": "50", "y": "0" },
+                { "name": "Jest", "v": "50", "y": "0" },
+                { "name": "React Testing Library", "v": "50", "y": "0" },
+
                 // { "name": "iOS", "v": "50", "y": "0" },
                 // { "name": "Android (NDK, AOSP)", "v": "50", "y": "0" },
             ]
@@ -92,8 +97,7 @@ var data = {
             "employer": "Texas Instruments",
             "title": "Software Architect",
             "location": "Dallas, TX",
-            "dates": "November 2010-September 2025",
-            // TODO: strengths: emulation, communications, performance, microoptimizations
+            "dates": "Nov 2010 - Sep 2025",
             "brief": "Design and implement functional models of the client's new products and features.",
             "description": "Tenure involved an evolution from rapid functional prototyping (building POCs and starter code, thus, reducing time-to-market) and deep systems engineering to technical leadership roles and architectural oversight. Considered the go-to person for bringing low-level hardware emulation and proprietary communication protocols to desktop and web applications. As part of the metrics task force, designed and met code quality metrics with tools like unit tests, code sanitizers, linters and static analyzers. This career progression was formally recognized with an appointment to the first rung of TI's Technical Ladder.",
             "description_old": "Create functional models for new features to be implemented on future releases of the company's client product lines. The product lines have source code written in different languages and architectures, as a System Engineer, the design and implementation of functionalities often require visiting different layers of the system, be it communicating from devices to desktop software, making portable documents that work on multiple architectures and form factors that the software runs on to creating stand-alone device emulators",
@@ -117,12 +121,12 @@ var data = {
                 {
                     "title": "Calculator File Transfer Library",
                     "date": "2024-2025",
-                    "description": "Designed and implemented functionality for performing file transfers between 1) Web app and physical calculator using WebSerial API and 2) A webapp that contains an emulated calculator, making the API between both libraries match so they can be a drop-in replacement for eachother"
+                    "description": "Designed and implemented functionality for performing file transfers between 1) Web app and physical calculator using WebSerial API and 2) A webapp that contains an emulated calculator, making the API between both libraries match so they can be a drop-in replacement for each other"
                 },
                 {
                     "title": "Calculator Transformation Graphing",
                     "date": "2024-2025",
-                    "description": "Implemented functionality to support animating graphs on new hardware platorm written in C, using the APIs provided by the calculator's tools."
+                    "description": "Implemented functionality to support animating graphs on new hardware platform written in C, using the APIs provided by the calculator's tools."
                 },
                 {
                     "title": "Calculator Build Environment",
@@ -132,13 +136,13 @@ var data = {
                 {
                     "title": "Calculator Device Emulation",
                     "date": "2020-2025",
-                    "description": "Designed and implemented the glue layer for targetting embedded code on the web by transpiling to WebAssembly. Coordinated crossfunctional team that did development and test for new features. Designed and implemented an automation entry point using WebSockets."
+                    "description": "Designed and implemented the glue layer for targeting embedded code on the web by transpiling to WebAssembly. Coordinated cross-functional team that did development and test for new features. Designed and implemented an automation entry point using WebSockets."
                 },
                 {
                     "title": "TI-84 Plus CE Online Calculator",
                     "date": "2022",
                     "url": "https://84plusce.ti.com/8eu",
-                    "description": "Implemented Angular application that provides access to an emulator for the TI 84 Plus CE calculator on web browsers. Implemented single-sign-on usage for user authentication and license validation via 3rd party provider. This was the first publicly available TI calculator on a web app with *over 1500 users in first month."
+                    "description": "Implemented Angular application that provides access to an emulator for the TI 84 Plus CE calculator on web browsers. Implemented single-sign-on usage for user authentication (OAuth identity) and license validation (entitlement) via 3rd party provider. This was the first publicly available TI calculator on a web app with *over 1500 users in first month."
                 },
                 // {
                 //     "title": "TI-Nspire Online Calculator",
@@ -158,7 +162,7 @@ var data = {
                 {
                     "title": "Automated Test Framework Prototype",
                     "date": "2019",
-                    "description": "Prototyped automation framework for interacting with calculator librarires in the browser using Node.js, CucumberJS, Mocha and Selenium Web Driver."
+                    "description": "Prototyped automation framework for interacting with calculator libraries in the browser using Node.js, CucumberJS, Mocha and Selenium Web Driver."
                 },
                 {
                     "title": "Web Apps Server-Side",
@@ -166,16 +170,16 @@ var data = {
                     "description": "Led team in determining Tomcat and Apache Web server configuration changes needed to address concerns brought up by IT security scans. Changes included modifying HTTP headers and additions to meta tags in the web app's HTML"
                 },
                 {
-                    "title": "Nspire Connect",
+                    "title": "TI-Nspire Connect",
                     "url": "https://nspireconnect.ti.com/nsc/",
                     "date": "2019",
-                    "description": "Designed and implemented Angular shell to run the web app, as well as the JavaScript and C glue layers for crosscompiling NavNet, the Nspire line of calculator's communication library with Emscripten to enable communicating with an Nspire CXII device via WebUSB. 28k users since launch last year."
+                    "description": "Designed and implemented Angular shell to run the web app, as well as the JavaScript and C glue layers for cross-compiling NavNet, the TI-Nspire line of calculator's communication library with Emscripten to enable communicating with a TI-Nspire CX II device via WebUSB. 28k on it's first year."
                 },
                 {
-                    "title": "Examcalc Accessibiliy",
+                    "title": "ExamCalc Accessibility",
                     "date": "2017-2018",
                     "url": "https://education.ti.com/en/product-resources/examcalc-software#:~:text=WCAG%2Dcompliant%20accessibility",
-                    "description": "Implemented  code needed in both z80 assembly and javascript to support market needs to make calculator emulators interact correctly with a screen reader for the vision impaired. Due to the nature of the calculator emulators, no _aria_ element is readitly available, so the emulator needs to provide the messages to be fed to a screen reader."
+                    "description": "Implemented  code needed in both z80 assembly and javascript to support market needs to make calculator emulators interact correctly with a screen reader for the vision impaired. Due to the nature of the calculator emulators, no _aria_ element is readily available, so the emulator needs to provide the messages to be fed to a screen reader."
                 },
                 {
                     "title": "TI Connect For Chrome OS",
@@ -202,36 +206,32 @@ var data = {
                     "description": "Implemented emulators for ez80-based devices which have gone through our client's pilots involving 800k users without any reported issues."
                 },
                 {
-                    "title": "Examcalcs",
+                    "title": "ExamCalcs",
                     "date": "2012-2013",
                     "url": "https://education.ti.com/en/product-resources/examcalc-software",
                     "description": " TI calculators that are approved for use on *ACT®, SAT®, and AP® exams*, as well as most *state assessments.* . Ported and implemented calculator emulators to the web. Adapted z80 opcodes and emulated the TI-84 Silver Edition and TI-84 Plus C's ASICs. Ported Toshiba T4 cpu emulation from Java and implemented the TI-108 and TI-30MV's ASICs. Pilots involving 800k users without any reported issues. https://education.ti.com/en/us/about/press-center/press-listing-content-module/6-20-2013-ccss"
                 },
                 {
-                    "title": "Document Display Standarization",
+                    "title": "Document Display Standardization",
                     "date": "2012",
-                    "description": "Given the strong desire for documents to display with the same word-wrapping and character counts on all supported devices (iPad being a new addition): researched and developed guidelines and layout rules for document rendering when being diplayed on different screen resolutions."
+                    "description": "Given the strong desire for documents to display with the same word-wrapping and character counts on all supported devices (iPad being a new addition): researched and developed guidelines and layout rules for document rendering when being displayed on different screen resolutions."
                 },
                 {
                     "title": "Lua Glue",
                     "date": "2011",
                     "description": "Designed and implemented the infrastructure for creating new classroom activities using the Lua scripting language. The C counterpart for the Lua bindings, as well as the Lua engine itself gets cross-compiled to run on different platform including iOS, Nucleus and desktop operating systems."
                 },
-                {
-                    "title": "CARS-SmartView",
-                    "description": "Did porting of a proprietary communications protocol that uses USB in order to have it work on a Chrome App for Chrome OS"
-                },
                 /* Android Investigations */
                 //                "Compiled and modified the AOSP to research VNC server possibilities; test target at the time was an OMAP dev board.",
                 /* SE work */
                 //                "Worked in conjunction with the product managers and development leads to determine software requirements.",
                 {
-                    "title": "Ui And Background Thread Refactor",
-                    "description": "Worked in conjunction with the development team to refactor the usage of JNI, improving performance and memory usage."
+                    "title": "Image Question type",
+                    "description": "Designed and implemented some of the infrastructure necessary to create new classroom activities using the Lua scripting language. The C counterpart for the Lua bindings, as well as the Lua engine itself gets cross-compiled to run on different platform including iOS, Nucleus and desktop operating systems. The use of Lua would open up the possibility of expanding TI-Nspire's question types in the future without needing to write them in Java"
                 },
                 {
-                    "title": "Image Question type",
-                    "description": "Designed and implemented some of the infrastructure necessary to create new classroom activities using the Lua scripting language. The C counterpart for the Lua bindings, as well as the Lua engine itself gets cross-compiled to run on different platform including iOS, Nucleus and desktop operating systems. The use of Lua would open up the possibility of expanding Nspire's question types in the future without needing to write them in Java"
+                    "title": "Ui And Background Thread Refactor",
+                    "description": "Worked in conjunction with the development team to refactor the usage of JNI, improving performance and memory usage."
                 }
             ],
         },
@@ -262,7 +262,8 @@ var data = {
                 {
                     "title": "Rollercoaster Rush for iPhone",
                     "date": "2010",
-                    "description": "Ported iPhone implementation of OpenGL game to Brew https://itunes.apple.com/us/app/3d-rollercoaster-rush/id319575672"
+                    "url": "https://itunes.apple.com/us/app/3d-rollercoaster-rush/id319575672",
+                    "description": "Ported iPhone implementation of OpenGL ES game to Qualcomm's Brew framework"
                 },
             ],
             "url": "http://en.wikipedia.org/wiki/Digital_Chocolate"
@@ -285,7 +286,7 @@ var data = {
                     "date": "2008",
                     "url": "https://www.pocketgamer.com/circulate/review/",
                     "url_old": "https://www.pocketgamer.com/circulate-prologue/lemonquest-brings-circulate-prologue-to-the-app-store/",
-                    "description": "Originally a PC based game; it was ported to the iPhone platform. Game used every user-friendly feature on the iPhone, including it's 3d sound capabilities with Open AL and it's accelerometer. Ported the DirectX impementation to the iPhone's OpenGL ES. Translated levels originally designed for desktop/mouse to be usable on a touch device. This game earned a bronze medal from pocketgamer.co.uk."
+                    "description": "Originally a PC based game; it was ported to the iPhone platform. Game used every user-friendly feature on the iPhone, including it's 3d sound capabilities with Open AL and it's accelerometer. Ported the DirectX implementation to the iPhone's OpenGL ES, converting 3d models from quads to triangles on the. Translated levels originally designed for desktop/mouse to be usable on a touch device. This game earned a bronze medal from pocketgamer.co.uk."
                 },
                 {
                     "title": "iFit",
@@ -305,17 +306,17 @@ var data = {
                 {
                     "title": "Blockbreaker for iPhone",
                     "date": "2007-2008",
-                    "description": "Developed and ported first prototype for the brickbreaker game using the Celestial framework for iPhone. The Mexico studio's team was the first to build a successful prototype which led to the studio being assigned more iPhone projects"
+                    "description": "Developed and ported first prototype for the brick-breaker game using the Celestial framework for iPhone. The Mexico studio's team was the first to build a successful prototype which led to the studio being assigned more iPhone projects. Used C-implementation for OpenGL ES as graphics engine and sourced models from other platforms."
                 },
                 {
                     "title": "Bikini Volleyball Mini Games",
                     "date": "2007",
-                    "description": "Implemented minigames that were included with the main volleyball game when built for devices that would support them"
+                    "description": "Implemented mini-games that were included with the main volleyball game when built for devices that would support them"
                 },
                 {
                     "title": "3d Programmer",
                     "date": "2006-2007",
-                    "description": "In charge of porting multiple game titles for resource-limited, but 3d-capable devices. All ports used Java/J2ME"
+                    "description": "In charge of porting multiple game titles for resource-limited, but 3d-capable devices. All ports used Java's JSR184 3d implementation for mobile devices and were adapted by tweaking frustum setup and removing bottlenecks in graphics pipelines where possible, resulting in improved performance or, in some more extreme cases reducing models' polygon count to achieve acceptable frames-per-second and keep games playable"
                 },
                 {
                     "title": "Virgin Mobile Team Lead",
@@ -345,7 +346,7 @@ var data = {
             "name": "Big 2 Poker",
             "location": "Mexicali, Baja California, Mexico",
             "dates": "2010",
-            "description": "Wrote graphics engine using C and OpenGL ES. Created art for a card game targeted towards the iPhone.",
+            "description": "Wrote graphics engine using C and OpenGL ES. Created art for a card game for iPhone OS.",
             "url": "https://itunes.apple.com/us/app/big-2-classic-free/id323375748?mt=8",
             "images": [
                 "images/Big2Poker/thumb.jpeg",
@@ -388,7 +389,7 @@ var data = {
             //     "location": "Online",
             //     "degree": "Nanodegree",
             //     "major": "iOS developer",
-            //     "dates": "2015-Present",
+            //     "dates": "2015",
             //     "url": "http://www.udacity.com/"
             // },
             // {
@@ -400,7 +401,6 @@ var data = {
             //     "url": "http://www.udacity.com/"
             // },
             {
-                //                "name": "Centro de Investigación Científica y Educación Superior de Ensenada",
                 "name": "Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE)",
                 "location": "Ensenada, B. C., Mexico",
                 "degree": "Completed coursework towards: Master's",
@@ -411,12 +411,7 @@ var data = {
                     {
                         "title": "Robot Control Over Ethernet",
                         "date": "2004",
-                        "description": "Used RTLinux kerenel modules on 2 computers to write a simple PD-controller in C with a GUI in Java on one computer to send the control signals over a TCP socket to another computer that interfaced with a 2-degree-of-freedom robot"
-                    },
-                    {
-                        "title": "Robot Watchdog",
-                        "date": "2018",
-                        "description": "As part of a 2 month internship with the school, particiapeted in the design discussions for a watchdog system to avoid wire tangling. Designed the 3d model for the custom enclosure to fit side-by-side on the rack that housed the robot's moto drivers. Performed soldering and validation of the watchdog's PCB."
+                        "description": "Developed RT-Linux kernel modules to communicate a PC that performed the PD control algorithm and a a driver PC that sent control signals and motor positions over TCP sockets with low-latency, minimal-jitter to control a 2-degree-of-freedom robot arm. Control PC had a Java Swing UI connected to the kernel module via Java Native Interface. The driver PC performed I/O operations directly to a data acquisition card from kernel space."
                     },
                 ]
             },
@@ -433,10 +428,50 @@ var data = {
                         "date": "2021",
                         "description": "Attended summer student exchange at the Unversité de Poitiers, France with a focus on control systems engineering."
                     },
+                    {
+                        "title": "Robot Watchdog",
+                        "date": "2018",
+                        "description": "As part of a 2 month internship at CICESE, particiapeted in the design discussions for a watchdog system to avoid wire tangling. Designed the CAD 3d model for the custom enclosure to fit side-by-side on the rack that housed the robot's motor drivers. Performed soldering and validation of the watchdog's PCB."
+                    },
                 ]
             }
         ],
         "onlineCourses": [
+        {
+            "title": "Next.js Fundamentals",
+            "school": "Codecademy",
+            "dates": "2025",
+            "url": "https://www.codecademy.com/learn/learn-react-testing",
+            "certificate": ""
+        },
+        {
+            "title": "OpenAPI Fundamentals (LFEL1011)",
+            "school": "Linux Foundation",
+            "dates": "2025",
+            "url": "https://trainingportal.linuxfoundation.org/courses/openapi-fundamentals-lfel1011",
+            "certificate": ""
+        },
+        {
+            "title": "Learn React Testing",
+            "school": "Codecademy",
+            "dates": "2025",
+            "url": "https://www.codecademy.com/learn/learn-react-testing",
+            "certificate": ""
+        },
+        {
+            "title": "Learn React: Lifecycle Methods",
+            "school": "Codecademy",
+            "dates": "2025",
+            "url": "https://www.codecademy.com/learn/learn-react-lifecycle-methods",
+            "certificate": ""
+        },
+        {
+            "title": "Learn React",
+            "school": "Codecademy",
+            "dates": "2025",
+            "url": "https://www.codecademy.com/enrolled/courses/react-101",
+            "certificate": ""
+        },
         {
             "title": "Bluetooth Low Energy Fundamentals",
             "school": "Nordic Developer Academy",
@@ -444,13 +479,13 @@ var data = {
             "url": "https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/",
             "certificate": ""
         },
-        // {
-        //     "title": "A Beginner’s Guide to Linux Kernel Development (LFD103)",
-        //     "school": "Linux Foundation",
-        //     "dates": "2025",
-        //     "url": "https://training.linuxfoundation.org/training/a-beginners-guide-to-linux-kernel-development-lfd103/",
-        //     "certificate": ""
-        // },
+        {
+            "title": "A Beginner\'s Guide to Linux Kernel Development (LFD103)",
+            "school": "Linux Foundation",
+            "dates": "2025",
+            "url": "https://training.linuxfoundation.org/training/a-beginners-guide-to-linux-kernel-development-lfd103/",
+            "certificate": ""
+        },
         {
             "title": "Learn C++",
             "school": "Codecademy",
@@ -459,47 +494,63 @@ var data = {
             "certificate": ""
         },
         {
-            "title": "iOS Persistence and Core Data",
+            "title": "iOS developer nanodegree",
             "school": "Udacity",
             "dates": "2015",
-            "url": "https://www.udacity.com/course/viewer#!/c-ud325-nd",
-            "certificate": "#"
+            "url": "",
+            "certificate": ""
         },
+        // {
+        //     "title": "iOS Persistence and Core Data",
+        //     "school": "Udacity",
+        //     "dates": "2015",
+        //     "url": "https://www.udacity.com/course/viewer#!/c-ud325-nd",
+        //     "certificate": "#"
+        // },
+        // {
+        //     "title": "iOS Networking with Swift",
+        //     "school": "Udacity",
+        //     "dates": "2015",
+        //     "url": "https://www.udacity.com/course/viewer#!/c-ud421-nd",
+        //     "certificate": "#"
+        // },
+        // {
+        //     "title": "UIKit Fundamentals I",
+        //     "school": "Udacity",
+        //     "dates": "2015",
+        //     "url": "https://www.udacity.com/course/viewer#!/c-ud788b-nd",
+        //     "certificate": "#"
+        // },
+        // {
+        //     "title": "UIKit Fundamentals II",
+        //     "school": "Udacity",
+        //     "dates": "2015",
+        //     "url": "https://www.udacity.com/course/viewer#!/c-ud788a-nd",
+        //     "certificate": "#"
+        // },
+        // {
+        //     "title": "Intro to iOS App Development Swift",
+        //     "school": "Udacity",
+        //     "dates": "2015",
+        //     "url": "https://www.udacity.com/course/ud585",
+        //     "certificate": "#"
+        // },
+
         {
-            "title": "iOS Networking with Swift",
+            "title": "Front-end web developer nanodegree",
             "school": "Udacity",
-            "dates": "2015",
-            "url": "https://www.udacity.com/course/viewer#!/c-ud421-nd",
-            "certificate": "#"
+            "dates": "2014-2015",
+            "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011",
+            "certificate": ""
         },
-        {
-            "title": "UIKit Fundamentals I",
-            "school": "Udacity",
-            "dates": "2015",
-            "url": "https://www.udacity.com/course/viewer#!/c-ud788b-nd",
-            "certificate": "#"
-        },
-        {
-            "title": "UIKit Fundamentals II",
-            "school": "Udacity",
-            "dates": "2015",
-            "url": "https://www.udacity.com/course/viewer#!/c-ud788a-nd",
-            "certificate": "#"
-        },
-        {
-            "title": "Intro to iOS App Development Swift",
-            "school": "Udacity",
-            "dates": "2015",
-            "url": "https://www.udacity.com/course/ud585",
-            "certificate": "#"
-        },
-        {
-            "title": "JavaScript Design Patterns",
-            "school": "Udacity",
-            "dates": "2015",
-            "url": "https://www.udacity.com/course/ud989",
-            "certificate": "#"
-        },
+        // {
+        //     "title": "JavaScript Design Patterns",
+        //     "school": "Udacity",
+        //     "dates": "2015",
+        //     "url": "https://www.udacity.com/course/ud989",
+        //     "certificate": "#"
+        // },
+
         {
             "title": "Website Performance Optimization",
             "school": "Udacity",
@@ -542,13 +593,13 @@ var data = {
             "url": "http://www.codecademy.com/tracks/jquery",
             "certificate": "#"
         },
-        {
-            "title": "JavaScript",
-            "school": "Codecademy",
-            "dates": "2013",
-            "url": "http://www.codecademy.com/tracks/javascript",
-            "certificate": "#"
-        },
+        // {
+        //     "title": "JavaScript",
+        //     "school": "Codecademy",
+        //     "dates": "2013",
+        //     "url": "http://www.codecademy.com/tracks/javascript",
+        //     "certificate": "#"
+        // },
         {
             "title": "Software Testing",
             "school": "Udacity",

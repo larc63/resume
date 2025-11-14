@@ -33,7 +33,7 @@ out.push('### Skills\n');
 
 
 out.push(`|||`);
-    out.push(`|:--|:--|`);
+out.push(`|:--|:--|`);
 for (let skillSet of data.skills) {
     // console.log(JSON.stringify(skillSet));
     var a = '';
@@ -119,11 +119,34 @@ for (const job of data.work.jobs) {
     }
     out.push('\n');
 }
+
+out.push('### Other Projects');
+for (const project of data.work.projects) {
+
+    const t = project.name.trim();
+    const d = project.dates;
+    const u = project.url?.trim();
+
+    out.push('<div style="display:flex;justify-content: space-between">')
+    if (u) {
+        out.push(`<h5 style="flex:1;"><a href="${u}" target="_blank">${t}</a></h5>`)
+    } else {
+        out.push(`<h5 style="flex:1;">${t}</h5>`)
+    }
+    out.push(`<h5 style="flex:1;text-align: right">${d}</h5>`)
+
+    out.push('</div>')
+
+    out.push(project.description);
+    out.push('\n');
+}
+
+
 out.push('### Education');
 for (const s of data.education.schools) {
     out.push(`#### [${s.name}](${s.url})`);
     out.push(`${s.degree} in ${s.major}, ${s.dates}`);
-    
+
     if (s.projects) {
         out.push('#### Academic Project');
         const desc = s.projects[0].description.trim();
@@ -139,9 +162,10 @@ for (const s of data.education.schools) {
 }
 
 // out.push(`* ${skill}`);
-out.push('### Online Courses');
+// out.push('### Online Courses');
+out.push('### Professional Development');
 for (const c of data.education.onlineCourses) {
-    out.push(`* ${c.title} - ${c.dates}`)
+    out.push(`* ${c.title} - _[${c.school}](${c.url})_ - ${c.dates}`)
 }
 out.push(``);
 out.push(``);
@@ -149,6 +173,6 @@ out.push(``);
 out.push(``);
 out.push(``);
 
-out.push('<div style="font-size:10px">DISCLAIMER: This document was structured using an AI to tailor experience points to the target role. All content, including dates, titles, and technical claims, is 100% accurate and based on my verified career history. I have thoroughly proofread and confirmed its factual correctness.</div>');
+out.push('<div style="font-size:10px">DISCLAIMER: Portions of this document were created using an AI to tailor experience points to the target role. All content, including dates, titles, and technical claims, is 100% accurate and based on my verified career history. I have thoroughly proofread and confirmed its factual correctness.</div>');
 
 writeFileSync('output/MasterCV.md', out.join('\n'), 'utf-8');
