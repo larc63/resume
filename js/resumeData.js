@@ -438,10 +438,17 @@ var data = {
         ],
         "onlineCourses": [
         {
+            "title": "AWS Cloud Practitioner Essentials",
+            "school": "AWS skill Builder",
+            "dates": "2025",
+            "url": "https://skillbuilder.aws/learn/94T2BEN85A/aws-cloud-practitioner-essentials/8D79F3AVR7",
+            "certificate": ""
+        },
+        {
             "title": "Next.js Fundamentals",
             "school": "Codecademy",
             "dates": "2025",
-            "url": "https://www.codecademy.com/learn/learn-react-testing",
+            "url": "https://www.codecademy.com/learn/intro-to-next-js",
             "certificate": ""
         },
         {
